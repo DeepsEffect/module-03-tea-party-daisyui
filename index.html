@@ -11,15 +11,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <style>
-        .font-primary{
+        .font-primary {
             font-family: 'Manrope';
         }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body class="font-primary">
+<body class="font-primary container mx-auto">
     <header>
-    
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div>
+                    <img src="./images/banner.png" />
+                </div>
+
+                <div class="space-y-2">
+                    <h1 class=" text-7xl font-extrabold leading-snug">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="py-6 text-lg text-[#777] font-medium">Tea and Botanical Solutions Supplier Give Optimum
+                        <br> Satisfaction To Your Taste Buds.
+                    </p>
+                    <button
+                        class=" btn bg-gradient-to-r from-[#F00] to-[#FF8938] text-white hover: hover:scale-105 focus:outline-none focus:shadow-outline-teal active:bg-teal-800">Explore
+                        More
+                        <img src="./images/arrow.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
